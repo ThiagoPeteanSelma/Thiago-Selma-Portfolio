@@ -35,7 +35,6 @@ Thiago-Selma-Portfolio/
 │       └── profile.jpg     # Imagem de perfil
 ├── package.json            # Metadados do projeto
 ├── README.md               # Este arquivo
-└── FilesBase/              # Documentação
 ```
 
 ### 🌐 Acessar Portfolio
@@ -125,7 +124,6 @@ Thiago-Selma-Portfolio/
 │       └── profile.jpg     # Profile image
 ├── package.json            # Project metadata
 ├── README.md               # This file
-└── FilesBase/              # Documentation
 ```
 
 ### 🌐 View Portfolio
@@ -215,7 +213,6 @@ Thiago-Selma-Portfolio/
 │       └── profile.jpg     # Imagen de perfil
 ├── package.json            # Metadata del proyecto
 ├── README.md               # Este archivo
-└── FilesBase/              # Documentación
 ```
 
 ### 🌐 Ver Portafolio
