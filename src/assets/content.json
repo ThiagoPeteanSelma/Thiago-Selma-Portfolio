@@ -208,49 +208,14 @@
   },
   "projects": [
     {
-      "name": "Thiago-Selma-Portfolio",
-      "url": "https://github.com/thiagopeteanselma/Thiago-Selma-Portfolio",
+      "name": "Em breve",
+      "url": "https://thiagopeteanselma.github.io/Thiago-Selma-Portfolio/",
       "descriptions": {
-        "pt": "Portfólio profissional responsivo com suporte multilíngue (PT/EN/ES), temas dark/light, timeline de experiência profissional e seção de formação acadêmica. Construído com HTML5, CSS3 e JavaScript vanilla.",
-        "en": "Responsive professional portfolio with multilingual support (PT/EN/ES), dark/light themes, professional experience timeline and academic background section. Built with HTML5, CSS3 and vanilla JavaScript.",
-        "es": "Portafolio profesional responsivo con soporte multilingüe (PT/EN/ES), temas oscuro/claro, línea de tiempo de experiencia profesional y sección de formación académica. Construido con HTML5, CSS3 y JavaScript vanilla."
+        "pt": "Em breve teremos os links dos repositórios.",
+        "en": "We will soon have the repository links.",
+        "es": "En breve tendremos los enlaces de los repositorios."
       }
-    },
-    {
-      "name": "WebScraper-Automation",
-      "url": "https://github.com/thiagopeteanselma/WebScraper-Automation",
-      "descriptions": {
-        "pt": "Ferramenta de automação e extração de dados web desenvolvida em C# com Selenium WebDriver. Suporta scraping dinâmico, tratamento de dados estruturados e exportação para múltiplos formatos.",
-        "en": "Web automation and data extraction tool developed in C# with Selenium WebDriver. Supports dynamic scraping, structured data handling and export to multiple formats.",
-        "es": "Herramienta de automatización y extracción de datos web desarrollada en C# con Selenium WebDriver. Soporta scraping dinámico, tratamiento de datos estructurados y exportación a múltiples formatos."
-      }
-    },
-    {
-      "name": "RestAPI-Service",
-      "url": "https://github.com/thiagopeteanselma/RestAPI-Service",
-      "descriptions": {
-        "pt": "WebAPI RESTful desenvolvida com ASP.NET Core e Entity Framework. Implementa autenticação JWT, validação de dados, logging e segurança. Documentação com Swagger/OpenAPI incluída.",
-        "en": "RESTful WebAPI developed with ASP.NET Core and Entity Framework. Implements JWT authentication, data validation, logging and security. Swagger/OpenAPI documentation included.",
-        "es": "WebAPI RESTful desarrollada con ASP.NET Core y Entity Framework. Implementa autenticación JWT, validación de datos, logging y seguridad. Documentación de Swagger/OpenAPI incluida."
-      }
-    },
-    {
-      "name": "ClickBot-Framework",
-      "url": "https://github.com/thiagopeteanselma/ClickBot-Framework",
-      "descriptions": {
-        "pt": "Framework em C# para automação de cliques e interações de UI. Utiliza bibliotecas nativas Windows para simulação de eventos mouse/teclado com precisão milisegundo.",
-        "en": "Framework in C# for click automation and UI interactions. Uses native Windows libraries for mouse/keyboard event simulation with millisecond precision.",
-        "es": "Framework en C# para automatización de clics e interacciones de interfaz de usuario. Utiliza bibliotecas nativas de Windows para simulación de eventos mouse/teclado con precisión de milisegundos."
-      }
-    },
-    {
-      "name": "DataProcessor-Pipeline",
-      "url": "https://github.com/thiagopeteanselma/DataProcessor-Pipeline",
-      "descriptions": {
-        "pt": "Pipeline de processamento de dados com .NET 7+. Suporta transformações em lote, validações com FluentValidation, e persistência em SQL Server com otimização de query.",
-        "en": "Data processing pipeline with .NET 7+. Supports batch transformations, validation with FluentValidation, and persistence in SQL Server with query optimization.",
-        "es": "Pipeline de procesamiento de datos con .NET 7+. Soporta transformaciones por lotes, validación con FluentValidation y persistencia en SQL Server con optimización de consultas."
-      }
+    }
     }
   ]
 }
