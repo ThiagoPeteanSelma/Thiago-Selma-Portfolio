@@ -1,0 +1,38 @@
+{
+  "name": "thiago-selma-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio of Thiago Petean Selma – .NET Software Engineer and Technical Leader.",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'No build step required for static site'",
+    "test": "echo 'Tests can be added here'",
+    "lint": "echo 'Linting tools can be configured here'"
+  },
+  "keywords": [
+    "portfolio",
+    ".net",
+    "developer",
+    "thiago",
+    "petean",
+    "selma"
+  ],
+  "author": {
+    "name": "Thiago Petean Selma",
+    "email": "thiagopetean@gmail.com",
+    "url": "https://www.linkedin.com/in/thiagopeteanselma"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thiagopeteanselma/Thiago-Selma-Portfolio.git"
+  },
+  "homepage": "https://github.com/thiagopeteanselma/Thiago-Selma-Portfolio",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}

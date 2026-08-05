@@ -1,0 +1,256 @@
+{
+  "translations": {
+    "pt": {
+      "role": "Analista Desenvolvedor .NET",
+      "about_title": "Sobre",
+      "about_text": "Analista Desenvolvedor .NET com 20 anos de experiência em sistemas corporativos, especialista em C#, ASP.NET Core e SQL Server. Forte atuação em robôs de clique, extração de dados web e desenvolvimento de WebAPIs RESTful, além de experiência com JavaScript e CSS. Reconhecido pela qualidade técnica, entregas dentro do prazo e soluções que aumentam eficiência e reduzem custos.",
+      "projects_title": "Projetos no GITHUB",
+      "projects_intro": "Links dos repositórios públicos no meu GitHub.",
+      "timeline_title": "Experiência Profissional",
+      "education_title": "Formação Acadêmica"
+    },
+    "en": {
+      "role": ".NET Developer Analyst",
+      "about_title": "About",
+      "about_text": ".NET Developer Analyst with 20 years of experience in corporate systems, specialist in C#, ASP.NET Core and SQL Server. Strong expertise in click automation, web data extraction and REST WebAPI development, plus experience with JavaScript and CSS. Recognized for technical quality, on-time delivery and solutions that increase efficiency and reduce costs.",
+      "projects_title": "Projects on GitHub",
+      "projects_intro": "Links to public repositories on my GitHub.",
+      "timeline_title": "Professional Experience",
+      "education_title": "Academic Background"
+    },
+    "es": {
+      "role": "Analista Desarrollador .NET",
+      "about_title": "Acerca de",
+      "about_text": "Analista Desarrollador .NET con 20 años de experiencia en sistemas corporativos, especialista en C#, ASP.NET Core y SQL Server. Fuerte experiencia en automatización de clics, extracción de datos web y desarrollo de WebAPIs REST, además de experiencia con JavaScript y CSS. Reconocido por calidad técnica, entregas a tiempo y soluciones que aumentan eficiencia y reducen costos.",
+      "projects_title": "Proyectos en GitHub",
+      "projects_intro": "Enlaces a los repositorios públicos en mi GitHub.",
+      "timeline_title": "Experiencia Profesional",
+      "education_title": "Formación Académica"
+    }
+  },
+  "experiences": {
+    "pt": [
+      {
+        "company": "Cognizant",
+        "role": "Analista Desenvolvedor Sênior",
+        "period": "Jan 2020 – Presente",
+        "description": "Suporte avançado e análise de fluxos lógicos de sistemas. Identificação e correção de falhas em scripts e procedures. Projeto estratégico de migração tecnológica para aplicações críticas. Redução de backlog e aumento de performance e estabilidade dos sistemas legados."
+      },
+      {
+        "company": "Indra",
+        "role": "Analista de Sistemas",
+        "period": "Out 2018 – Jan 2020",
+        "description": "Desenvolvimento de soluções de automação para o cliente Itaú. Apoio às áreas operacionais para otimização de fluxos."
+      },
+      {
+        "company": "PH3A",
+        "role": "Analista Programador",
+        "period": "Fev 2016 – Out 2018",
+        "description": "Manutenção e evolução do sistema Data_Cob com .NET, C# MVC e SQL Server. Implementação de melhorias na performance e experiência do usuário."
+      },
+      {
+        "company": "Ituran Brasil",
+        "role": "Analista Programador",
+        "period": "Jan 2012 – Fev 2016",
+        "description": "Desenvolvimento de projetos em console, Windows Forms e web com C# e VB.NET. Padrão MVC3 com Razor e HTML5. Banco de dados SQL Server 2008/2012."
+      },
+      {
+        "company": "Arima Tecnologia",
+        "role": "Programador Jr",
+        "period": "Jan 2009 – Jan 2012",
+        "description": "Desenvolvimento web com ASP.NET e C#, arquitetura MVC3. Manutenção de sistemas e banco de dados SQL Server 2008."
+      },
+      {
+        "company": "Premium Brindes Promocionais",
+        "role": "Analista de Sistemas",
+        "period": "Mai 2008 – Jan 2009",
+        "description": "Desenvolvimento de sistemas em Windows Forms com VB.NET. Gerenciamento de banco de dados Oracle 9i."
+      },
+      {
+        "company": "Siegwerk",
+        "role": "Analista de Sistemas Jr",
+        "period": "Set 2006 – Mai 2008",
+        "description": "Manutenção de sistema integrado em Clipper. Implementação de ERP IFS e manutenção de BI em VB6 com SQL Server 2005."
+      }
+    ],
+    "en": [
+      {
+        "company": "Cognizant",
+        "role": "Senior Developer Analyst",
+        "period": "Jan 2020 – Present",
+        "description": "Advanced support and logical flow analysis of systems. Identification and correction of script and stored procedure failures. Strategic project for technology migration of critical applications. Backlog reduction and improvements to legacy system performance and stability."
+      },
+      {
+        "company": "Indra",
+        "role": "Systems Analyst",
+        "period": "Oct 2018 – Jan 2020",
+        "description": "Development of automation solutions for Itaú client. Support to operational teams for process flow optimization."
+      },
+      {
+        "company": "PH3A",
+        "role": "Developer Analyst",
+        "period": "Feb 2016 – Oct 2018",
+        "description": "Maintenance and evolution of Data_Cob system with .NET, C# MVC and SQL Server. Implementation of performance improvements and user experience enhancements."
+      },
+      {
+        "company": "Ituran Brasil",
+        "role": "Developer Analyst",
+        "period": "Jan 2012 – Feb 2016",
+        "description": "Development of projects in console, Windows Forms and web with C# and VB.NET. MVC3 pattern with Razor and HTML5. SQL Server 2008/2012 databases."
+      },
+      {
+        "company": "Arima Tecnologia",
+        "role": "Junior Developer",
+        "period": "Jan 2009 – Jan 2012",
+        "description": "Web development with ASP.NET and C#, MVC3 architecture. Maintenance of systems and SQL Server 2008 databases."
+      },
+      {
+        "company": "Premium Brindes Promocionais",
+        "role": "Systems Analyst",
+        "period": "May 2008 – Jan 2009",
+        "description": "System development in Windows Forms with VB.NET. Oracle 9i database management."
+      },
+      {
+        "company": "Siegwerk",
+        "role": "Junior Systems Analyst",
+        "period": "Sep 2006 – May 2008",
+        "description": "Maintenance of integrated system in Clipper. IFS ERP implementation and BI maintenance in VB6 with SQL Server 2005."
+      }
+    ],
+    "es": [
+      {
+        "company": "Cognizant",
+        "role": "Analista Desarrollador Senior",
+        "period": "Ene 2020 – Presente",
+        "description": "Soporte avanzado y análisis de flujos lógicos de sistemas. Identificación y corrección de fallas en scripts y procedures. Proyecto estratégico de migración tecnológica para aplicaciones críticas. Reducción de backlog y mejoras en performance y estabilidad de sistemas legados."
+      },
+      {
+        "company": "Indra",
+        "role": "Analista de Sistemas",
+        "period": "Oct 2018 – Ene 2020",
+        "description": "Desarrollo de soluciones de automatización para cliente Itaú. Apoyo a equipos operacionales para optimización de flujos de procesos."
+      },
+      {
+        "company": "PH3A",
+        "role": "Analista Programador",
+        "period": "Feb 2016 – Oct 2018",
+        "description": "Mantenimiento y evolución del sistema Data_Cob con .NET, C# MVC y SQL Server. Implementación de mejoras en performance y experiencia del usuario."
+      },
+      {
+        "company": "Ituran Brasil",
+        "role": "Analista Programador",
+        "period": "Ene 2012 – Feb 2016",
+        "description": "Desarrollo de proyectos en consola, Windows Forms y web con C# y VB.NET. Patrón MVC3 con Razor y HTML5. Bases de datos SQL Server 2008/2012."
+      },
+      {
+        "company": "Arima Tecnología",
+        "role": "Programador Jr",
+        "period": "Ene 2009 – Ene 2012",
+        "description": "Desarrollo web con ASP.NET y C#, arquitectura MVC3. Mantenimiento de sistemas y bases de datos SQL Server 2008."
+      },
+      {
+        "company": "Premium Brindes Promocionais",
+        "role": "Analista de Sistemas",
+        "period": "May 2008 – Ene 2009",
+        "description": "Desarrollo de sistemas en Windows Forms con VB.NET. Gestión de bases de datos Oracle 9i."
+      },
+      {
+        "company": "Siegwerk",
+        "role": "Analista de Sistemas Jr",
+        "period": "Sep 2006 – May 2008",
+        "description": "Mantenimiento de sistema integrado en Clipper. Implementación de ERP IFS y mantenimiento de BI en VB6 con SQL Server 2005."
+      }
+    ]
+  },
+  "education": {
+    "pt": [
+      {
+        "degree": "Pós-graduação em Engenharia de Software",
+        "institution": "FMU - Faculdade Metropolitana Unida",
+        "period": "2015 – 2016",
+        "details": "Especialização em Engenharia de Software com foco em arquitetura, padrões de design e qualidade de software."
+      },
+      {
+        "degree": "Tecnologia em Análise e Desenvolvimento de Sistemas",
+        "institution": "Centro Universitário Anhangüera",
+        "period": "2012 – 2014",
+        "details": "Formação técnica superior em análise de sistemas, desenvolvimento de software e gestão de TI."
+      }
+    ],
+    "en": [
+      {
+        "degree": "Postgraduate Degree in Software Engineering",
+        "institution": "FMU - Metropolitan United Faculty",
+        "period": "2015 – 2016",
+        "details": "Specialization in Software Engineering with focus on architecture, design patterns and software quality."
+      },
+      {
+        "degree": "Diploma in Systems Analysis and Development",
+        "institution": "Anhangüera University Center",
+        "period": "2012 – 2014",
+        "details": "Higher technical education in systems analysis, software development and IT management."
+      }
+    ],
+    "es": [
+      {
+        "degree": "Posgrado en Ingeniería de Software",
+        "institution": "FMU - Facultad Metropolitana Unida",
+        "period": "2015 – 2016",
+        "details": "Especialización en Ingeniería de Software con enfoque en arquitectura, patrones de diseño y calidad de software."
+      },
+      {
+        "degree": "Diploma en Análisis y Desarrollo de Sistemas",
+        "institution": "Centro Universitario Anhangüera",
+        "period": "2012 – 2014",
+        "details": "Educación técnica superior en análisis de sistemas, desarrollo de software y gestión de TI."
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "Thiago-Selma-Portfolio",
+      "url": "https://github.com/thiagopeteanselma/Thiago-Selma-Portfolio",
+      "descriptions": {
+        "pt": "Portfólio profissional responsivo com suporte multilíngue (PT/EN/ES), temas dark/light, timeline de experiência profissional e seção de formação acadêmica. Construído com HTML5, CSS3 e JavaScript vanilla.",
+        "en": "Responsive professional portfolio with multilingual support (PT/EN/ES), dark/light themes, professional experience timeline and academic background section. Built with HTML5, CSS3 and vanilla JavaScript.",
+        "es": "Portafolio profesional responsivo con soporte multilingüe (PT/EN/ES), temas oscuro/claro, línea de tiempo de experiencia profesional y sección de formación académica. Construido con HTML5, CSS3 y JavaScript vanilla."
+      }
+    },
+    {
+      "name": "WebScraper-Automation",
+      "url": "https://github.com/thiagopeteanselma/WebScraper-Automation",
+      "descriptions": {
+        "pt": "Ferramenta de automação e extração de dados web desenvolvida em C# com Selenium WebDriver. Suporta scraping dinâmico, tratamento de dados estruturados e exportação para múltiplos formatos.",
+        "en": "Web automation and data extraction tool developed in C# with Selenium WebDriver. Supports dynamic scraping, structured data handling and export to multiple formats.",
+        "es": "Herramienta de automatización y extracción de datos web desarrollada en C# con Selenium WebDriver. Soporta scraping dinámico, tratamiento de datos estructurados y exportación a múltiples formatos."
+      }
+    },
+    {
+      "name": "RestAPI-Service",
+      "url": "https://github.com/thiagopeteanselma/RestAPI-Service",
+      "descriptions": {
+        "pt": "WebAPI RESTful desenvolvida com ASP.NET Core e Entity Framework. Implementa autenticação JWT, validação de dados, logging e segurança. Documentação com Swagger/OpenAPI incluída.",
+        "en": "RESTful WebAPI developed with ASP.NET Core and Entity Framework. Implements JWT authentication, data validation, logging and security. Swagger/OpenAPI documentation included.",
+        "es": "WebAPI RESTful desarrollada con ASP.NET Core y Entity Framework. Implementa autenticación JWT, validación de datos, logging y seguridad. Documentación de Swagger/OpenAPI incluida."
+      }
+    },
+    {
+      "name": "ClickBot-Framework",
+      "url": "https://github.com/thiagopeteanselma/ClickBot-Framework",
+      "descriptions": {
+        "pt": "Framework em C# para automação de cliques e interações de UI. Utiliza bibliotecas nativas Windows para simulação de eventos mouse/teclado com precisão milisegundo.",
+        "en": "Framework in C# for click automation and UI interactions. Uses native Windows libraries for mouse/keyboard event simulation with millisecond precision.",
+        "es": "Framework en C# para automatización de clics e interacciones de interfaz de usuario. Utiliza bibliotecas nativas de Windows para simulación de eventos mouse/teclado con precisión de milisegundos."
+      }
+    },
+    {
+      "name": "DataProcessor-Pipeline",
+      "url": "https://github.com/thiagopeteanselma/DataProcessor-Pipeline",
+      "descriptions": {
+        "pt": "Pipeline de processamento de dados com .NET 7+. Suporta transformações em lote, validações com FluentValidation, e persistência em SQL Server com otimização de query.",
+        "en": "Data processing pipeline with .NET 7+. Supports batch transformations, validation with FluentValidation, and persistence in SQL Server with query optimization.",
+        "es": "Pipeline de procesamiento de datos con .NET 7+. Soporta transformaciones por lotes, validación con FluentValidation y persistencia en SQL Server con optimización de consultas."
+      }
+    }
+  ]
+}

@@ -1,0 +1,708 @@
+/* ============================================================
+   Base reset and variables
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #0d1117;
+  --color-surface: #161b22;
+  --color-border: #30363d;
+  --color-text: #c9d1d9;
+  --color-heading: #f0f6fc;
+  --color-accent: #58a6ff;
+  --color-linkedin: #0a66c2;
+  --color-github: #238636;
+  --color-trampos: #6b5b95;
+  --color-geekhunter: #0084ff;
+  --color-99jobs: #ff8c00;
+  --color-hackerrank: #2ec866;
+  --font-main: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --radius: 8px;
+  --max-width: 820px;
+}
+
+/* Light theme variable overrides */
+.theme-light {
+  --color-bg: #f6f8fa;
+  --color-surface: #ffffff;
+  --color-border: #d0d7de;
+  --color-text: #24292f;
+  --color-heading: #1f2328;
+  --color-accent: #0969da;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ============================================================
+   Header / Language switcher
+   ============================================================ */
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--color-border);
+  position: sticky;
+  top: 0;
+  background-color: var(--color-bg);
+  z-index: 1001;
+}
+
+.lang-switcher {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.lang-switcher button {
+  background: transparent;
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 0.3rem 0.75rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.lang-switcher button:hover,
+.lang-switcher button.active {
+  background-color: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+}
+
+.ctrl-sep {
+  width: 1px;
+  height: 1.4rem;
+  background: var(--color-border);
+  align-self: center;
+  margin: 0 0.1rem;
+}
+
+/* ============================================================
+   Main content
+   ============================================================ */
+main {
+  flex: 1;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2rem 1.5rem 4rem;
+  width: 100%;
+}
+
+/* ============================================================
+   Hero section
+   ============================================================ */
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3rem 0 2.5rem;
+  gap: 1rem;
+}
+
+#profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--color-accent);
+}
+
+#hero h1 {
+  color: var(--color-heading);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: var(--color-accent);
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+/* ============================================================
+   Card sections
+   ============================================================ */
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 1.75rem 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.card h2 {
+  color: var(--color-heading);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 0.5rem;
+}
+
+/* ============================================================
+   Links section
+   ============================================================ */
+#links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.social-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-linkedin { background-color: var(--color-linkedin); color: #fff; }
+.btn-github { background-color: var(--color-github); color: #fff; }
+.btn-twitter { background-color: #1DA1F2; color: #fff; }
+.btn-email { background-color: var(--color-accent); color: #fff; }
+.btn-trampos { background-color: var(--color-trampos); color: #fff; }
+.btn-geekhunter { background-color: var(--color-geekhunter); color: #fff; }
+.btn-99jobs { background-color: var(--color-99jobs); color: #fff; }
+.btn-hackerrank { background-color: var(--color-hackerrank); color: #fff; }
+
+/* ============================================================
+   Projects section
+   ============================================================ */
+.projects-intro {
+  color: var(--color-text);
+  font-style: italic;
+}
+
+#project-list {
+  margin-top: 1rem;
+  display: grid;
+  gap: 1rem;
+}
+
+/* ============================================================
+   Timeline section – horizontal alternating circles
+   ============================================================ */
+.h-timeline-wrapper {
+  margin-top: 1.5rem;
+}
+
+.h-tl-items {
+  display: flex;
+  position: relative;
+}
+
+/* Rail: top-content(52) + connector(20) + dot-radius(23) = 95px */
+.h-tl-items::before {
+  content: "";
+  position: absolute;
+  top: 95px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-border);
+  z-index: 0;
+}
+
+.h-tl-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* Content areas – fixed height so rail aligns across all items */
+.h-tl-top-content,
+.h-tl-bottom-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 4px;
+  height: 52px;
+}
+
+.h-tl-top-content    { justify-content: flex-end;   padding-bottom: 0.3rem; }
+.h-tl-bottom-content { justify-content: flex-start; padding-top:    0.3rem; }
+
+/* Connector lines between text and circle */
+.h-tl-connector {
+  width: 2px;
+  height: 20px;
+  background: var(--clr);
+  opacity: 0.55;
+}
+
+/* Circle */
+.h-tl-dot {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--clr);
+  border: 3px solid var(--color-bg);
+  outline: 2px solid var(--clr);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  cursor: pointer;
+  position: relative;
+  flex-shrink: 0;
+  transition: transform 0.18s;
+}
+
+.h-tl-dot:hover { transform: scale(1.14); }
+
+.h-tl-year {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+/* Text inside top/bottom cards */
+.h-tl-company {
+  display: block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--color-heading);
+  line-height: 1.3;
+}
+
+.h-tl-period {
+  display: block;
+  font-size: 0.62rem;
+  color: #6e7681;
+  margin-top: 0.15rem;
+}
+
+.h-tl-role-small {
+  display: block;
+  font-size: 0.62rem;
+  color: var(--clr);
+  margin-top: 0.12rem;
+  font-weight: 500;
+}
+
+/* Odd items: content above, bottom area hidden */
+.h-tl-item:nth-child(odd) .h-tl-top-content   { visibility: visible; }
+.h-tl-item:nth-child(odd) .h-tl-top-conn      { visibility: visible; }
+.h-tl-item:nth-child(odd) .h-tl-bot-conn      { visibility: hidden;  }
+.h-tl-item:nth-child(odd) .h-tl-bottom-content { visibility: hidden;  }
+
+/* Even items: content below, top area hidden */
+.h-tl-item:nth-child(even) .h-tl-top-content   { visibility: hidden;  }
+.h-tl-item:nth-child(even) .h-tl-top-conn      { visibility: hidden;  }
+.h-tl-item:nth-child(even) .h-tl-bot-conn      { visibility: visible; }
+.h-tl-item:nth-child(even) .h-tl-bottom-content { visibility: visible; }
+
+/* ============================================================
+   Unified Tooltip Styles (shared by timeline and projects)
+   ============================================================ */
+.tooltip {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  min-width: 220px;
+  max-width: 270px;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+  white-space: normal;
+  word-wrap: break-word;
+  overflow: visible;
+}
+
+/* Arrow decoration for tooltip */
+.tooltip::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: var(--color-text);
+  top: 100%;
+  z-index: 1001;
+}
+
+/* Tooltip positioned BELOW (when near top of viewport) */
+.tooltip.tooltip-below {
+  bottom: auto;
+  top: calc(100% + 12px);
+  z-index: 1001;
+}
+
+/* Arrow for tooltip below – points upward */
+.tooltip.tooltip-below::after {
+  top: auto;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-bottom-color: var(--color-text);
+  border-top-color: transparent;
+  z-index: 1001;
+}
+
+/* Timeline tooltip specific styles */
+.h-tl-tooltip {
+  opacity: 0;
+}
+
+.h-tl-dot:hover .h-tl-tooltip {
+  opacity: 1;
+}
+
+.tt-company {
+  display: block;
+  color: var(--color-heading);
+  font-size: 0.88rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.tt-role {
+  display: block;
+  color: var(--clr);
+  font-size: 0.78rem;
+  font-weight: 500;
+  font-style: normal;
+  margin-bottom: 0.5rem;
+}
+
+.tt-desc {
+  font-size: 0.78rem;
+  color: var(--color-text);
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ============================================================
+   Education section
+   ============================================================ */
+#education-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.edu-item {
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.edu-marker {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  border: 2px solid var(--color-bg);
+  flex-shrink: 0;
+  margin-top: 0.35rem;
+}
+
+.edu-content {
+  flex: 1;
+}
+
+.edu-degree {
+  color: var(--color-heading);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.edu-institution {
+  color: var(--color-accent);
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.15rem;
+}
+
+.edu-period {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #6e7681;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.edu-details {
+  font-size: 0.85rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ============================================================
+   Projects Section
+   ============================================================ */
+#project-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.projects-intro {
+  color: var(--color-text);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  padding: 1rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  text-decoration: none;
+  color: var(--color-heading);
+  transition: all 0.3s ease;
+}
+
+/* ============================================================
+   Email Modal
+   ============================================================ */
+.email-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+  animation: fadeIn 0.2s ease;
+}
+
+.email-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  width: 90%;
+  z-index: 10000;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translate(-50%, -40%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.email-modal-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.email-modal-header h3 {
+  color: var(--color-heading);
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.email-modal-body {
+  padding: 1.5rem;
+}
+
+.email-modal-body p {
+  color: var(--color-text);
+  margin: 0 0 1rem;
+  font-size: 0.95rem;
+}
+
+.email-modal-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.email-modal-btn {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.email-modal-btn-primary {
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+  font-weight: 600;
+}
+
+.email-modal-btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.email-modal-btn-secondary {
+  background: var(--color-github);
+  color: #fff;
+  border-color: var(--color-github);
+}
+
+.email-modal-btn-secondary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.email-modal-btn-cancel {
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.email-modal-btn-cancel:hover {
+  background: var(--color-border);
+}
+
+.error-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #d73a49;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  z-index: 99999;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Elevate project link when tooltip is positioned below */
+.project-link.tooltip-below-active {
+  z-index: 1000;
+}
+
+.project-link:hover {
+  border-color: var(--color-accent);
+  box-shadow: 0 4px 12px rgba(92, 141, 184, 0.15);
+  transform: translateY(-2px);
+}
+
+.project-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-heading);
+  margin-bottom: 0.5rem;
+  flex: 1;
+}
+
+.project-icon {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  font-size: 1.2rem;
+  color: var(--color-accent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-link:hover .project-icon {
+  opacity: 1;
+}
+
+/* Project tooltip inherits from .tooltip */
+.project-tooltip {
+  font-size: 0.85rem;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.project-link:hover .project-tooltip {
+  opacity: 1;
+}
+
+/* ============================================================
+   Footer
+   ============================================================ */
+footer {
+  text-align: center;
+  padding: 1.25rem;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.85rem;
+  color: #6e7681;
+}
+
+/* ============================================================
+   Responsive
+   ============================================================ */
+@media (max-width: 600px) {
+  #hero h1 { font-size: 1.5rem; }
+  .card { padding: 1.25rem 1rem; }
+  header { padding: 0.75rem 1rem; }
+}
