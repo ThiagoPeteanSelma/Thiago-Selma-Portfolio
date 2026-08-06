@@ -208,12 +208,12 @@
   },
   "projects": [
     {
-      "name": "Em breve",
-      "url": "https://thiagopeteanselma.github.io/Thiago-Selma-Portfolio/",
+      "name": "API-de-Classificacao-de-Risco-de-Trades",
+      "url": "https://github.com/ThiagoPeteanSelma/Desafio-Tecnico-.NET-API-de-Classificacao-de-Risco-de-Trades",
       "descriptions": {
-        "pt": "Em breve teremos os links dos repositórios.",
-        "en": "We will soon have the repository links.",
-        "es": "En breve tendremos los enlaces de los repositorios."
+        "pt": "Desafio Técnico: API .NET 8 para classificação de risco de trades com análise estatística de portfólios.",
+        "en": "Technical Challenge: .NET 8 API for trade risk classification with portfolio statistical analysis.",
+        "es": "Desafío Técnico: API .NET 8 para clasificación de riesgo de operaciones con análisis estadístico de portafolios."
       }
     }
   ]
