@@ -215,6 +215,15 @@
         "en": "Technical Challenge: .NET 8 API for trade risk classification with portfolio statistical analysis.",
         "es": "Desafío Técnico: API .NET 8 para clasificación de riesgo de operaciones con análisis estadístico de portafolios."
       }
+    },
+    {
+      "name": "CrossPlatform-Calculator-TDD-Framework",
+      "url": "https://github.com/ThiagoPeteanSelma/CrossPlatform-Calculator-TDD-Framework",
+      "descriptions": {
+        "pt": "CrossPlatform Calculator TDD Framework demonstra princípios SOLID e padrões de design em Web, Mobile e Desktop. Construído com .NET WebAPI, React, Node.js, MAUI e WPF, centraliza lógica de cálculo, ícones e layouts. O projeto aplica Test-Driven Development para garantir consistência, escalabilidade e documentação unificada.",
+        "en": "CrossPlatform Calculator TDD Framework demonstrates SOLID principles and design patterns across Web, Mobile, and Desktop. Built with .NET WebAPI, React, Node.js, MAUI, and WPF, it centralizes calculation logic, icons, and layouts. The project applies Test-Driven Development to ensure consistency, scalability, and unified documentation.",
+        "es": "CrossPlatform Calculator TDD Framework demuestra principios SOLID y patrones de diseño en Web, Mobile y Desktop. Construido con .NET WebAPI, React, Node.js, MAUI y WPF, centraliza lógica de cálculo, iconos y diseños. El proyecto aplica Test-Driven Development para garantizar consistencia, escalabilidad y documentación unificada."
+      }
     }
   ]
 }
